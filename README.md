@@ -48,3 +48,18 @@ I will use `LOCAL USER` and `REMOTE USER` here.
 ### Important to know about rejecting ("ignoring") friend requests:
 
 Please note that when a user ignores a friend request, the requesting user knows that immediately, because their state changes from "RequestInitiator" to "None" immediately! So this should actually not be called "ignore", it should be called "reject".
+
+
+### Remote relationship states
+
+This table shows for each relationship state, what states are possible for the REMOTE USER when they call `GetFriendRelationship()` with the Steam id of the LOCAL USER.
+
+| LOCAL USER | REMOTE USER |
+| :--- | :--- |
+| `k_EFriendRelationshipNone` | `k_EFriendRelationshipNone`<br>`k_EFriendRelationshipBlocked`<br>`k_EFriendRelationshipIgnored` |
+| `k_EFriendRelationshipBlocked` | `k_EFriendRelationshipNone` |
+| `k_EFriendRelationshipRequestRecipient` | `k_EFriendRelationshipRequestInitiator` |
+| `k_EFriendRelationshipFriend` | `k_EFriendRelationshipFriend`<br>`k_EFriendRelationshipIgnoredFriend` |
+| `k_EFriendRelationshipRequestInitiator` | `k_EFriendRelationshipRequestRecipient` |
+| `k_EFriendRelationshipIgnored` | `k_EFriendRelationshipNone` |
+| `k_EFriendRelationshipIgnoredFriend` | `k_EFriendRelationshipFriend`<br>`k_EFriendRelationshipIgnoredFriend` |
