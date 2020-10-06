@@ -5,7 +5,7 @@ I put this repo up for anyone, who like me, tries to figure out what the values 
 
 After getting utterly confused with the names and comments, I spend an hour testing this out with a friend. We unfriended, requested, ignored, blocked etc each other until we pinned down what each enum value actually means.
 
-`**tl;dr: "Blocked" is "Ignored". "Ignored" is "Blocked". "IgnoredFriend" is not used.**`
+`**tl;dr: "Blocked" is "Ignored". "Ignored" is "Blocked". "IgnoredFriend" is complicated.**`
 
 
 ### Language clarification
