@@ -61,5 +61,5 @@ This table shows for each relationship state, what states are possible for the R
 | `k_EFriendRelationshipRequestRecipient` | `k_EFriendRelationshipRequestInitiator` |
 | `k_EFriendRelationshipFriend` | `k_EFriendRelationshipFriend`<br>`k_EFriendRelationshipIgnoredFriend` |
 | `k_EFriendRelationshipRequestInitiator` | `k_EFriendRelationshipRequestRecipient` |
-| `k_EFriendRelationshipIgnored` | `k_EFriendRelationshipNone` |
+| `k_EFriendRelationshipIgnored` | `k_EFriendRelationshipNone`<br>`k_EFriendRelationshipIgnored` |
 | `k_EFriendRelationshipIgnoredFriend` | `k_EFriendRelationshipFriend`<br>`k_EFriendRelationshipIgnoredFriend` |
